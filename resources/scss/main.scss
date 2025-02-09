@@ -74,6 +74,7 @@ header {
         padding-bottom: 32px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         h2 {
             color: inherit;
@@ -98,6 +99,14 @@ header {
                 font-size: 20px;
                 text-decoration: none;
             }
+        }
+    }
+
+    &.is-scrolling {
+        background-color: #191817;
+        .container {
+            padding-top: 16px;
+            padding-bottom: 16px;
         }
     }
 }
