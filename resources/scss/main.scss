@@ -16,6 +16,16 @@ body {
     padding-left: 128px;
     padding-right: 128px;
     width: 100%;
+
+    @media only screen and (max-width: 1024px) {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 section {
@@ -28,13 +38,24 @@ section {
 }
 
 .button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
     display: inline-block;
     color: #fff9e7;
     background-color: #ff9fdb;
+    font-size: 20px;
     padding: 12px 16px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
+    cursor: pointer;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 18px;
+    }
 }
 
 img {
@@ -67,6 +88,10 @@ header {
             display: grid;
             gap: 16px;
             grid-template-columns: repeat(4, auto);
+
+            @media only screen and (max-width: 767px) {
+                display: none;
+            }
 
             a {
                 color: inherit;
@@ -112,17 +137,26 @@ main {
                 span {
                     color: #ff9fdb;
                 }
+            
+                @media only screen and (max-width: 767px) {
+                    font-size: 32px;
+                }
             }
 
             h3 {
                 font-size: 36px;
                 font-weight: 400;
                 margin-bottom: 32px;
+
+                @media only screen and (max-width: 767px) {
+                    font-size: 20px;
+                }
             }
         }
     }
 
     .services {
+
         .container {
             padding-top: 64px;
             padding-bottom: 64px;
@@ -132,6 +166,14 @@ main {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 16px;
+
+            @media only screen and (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media only screen and (max-width: 767px) {
+                grid-template-columns: 1fr;
+            }
 
             .service{
                 background-color: #fff9e7;
@@ -169,6 +211,14 @@ main {
             gap: 16px;
             margin-bottom: 32px;
 
+            @media only screen and (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media only screen and (max-width: 767px) {
+                grid-template-columns: 1fr;
+            }
+
             .project {
                 background-image: url(../images/page\ 1\ bg.png);
                 border-radius: 16px;
@@ -187,11 +237,19 @@ main {
                     h3 {
                         font-size: 32px;
                         margin-bottom: 16px;
+
+                        @media only screen and (max-width: 1024px) {
+                            font-size: 28px;
+                        }
                     }
 
                     p {
                         font-size: 18px;
                         margin-bottom: 16px;
+
+                        @media only screen and (max-width: 1024px) {
+                            font-size: 16px;
+                        }
                     }
                 }
 
@@ -207,5 +265,69 @@ main {
         .center {
             text-align: center;
         }
+    }
+
+    .contact {
+        background-color: #9b75d7;
+
+        .container {
+            padding-top: 64px;
+            padding-bottom: 64px;
+
+            h2 {
+                color: #fff9e7;
+            }
+
+            form {
+                display: block;
+                margin: 0 auto;
+                max-width: 680px;
+
+                .form-grid {
+                    display: grid;
+                    gap: 16px;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-bottom: 16px;
+
+                    @media only screen and (max-width: 767px) {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .form-element, .form-area {
+                        appearance: none;
+                        border: none;
+                        outline: none;
+                        background: none;
+
+                        display: block;
+                        width: 100%;
+                        background-color: #fff9e7;
+                        border-radius: 8px;
+
+                        padding: 16px;
+                        font-size: 28px;
+                        color: #313131;
+
+                        &::placeholder {
+                            color: #aaa;
+                        }
+                    }
+
+                    .form-area {
+                        grid-column: span 2;
+                    }
+                }
+
+                .right-align {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hide-mob {
+        display: none;
     }
 }
