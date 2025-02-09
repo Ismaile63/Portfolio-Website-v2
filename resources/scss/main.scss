@@ -167,6 +167,7 @@ main {
             display: grid;
             grid-template-columns:  repeat(3, 1fr);
             gap: 16px;
+            margin-bottom: 32px;
 
             .project {
                 background-image: url(../images/page\ 1\ bg.png);
@@ -201,6 +202,10 @@ main {
                     }
                 }
             }
+        }
+
+        .center {
+            text-align: center;
         }
     }
 }
