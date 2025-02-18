@@ -489,7 +489,7 @@ main {
                         border-radius: 8px;
 
                         padding: 16px;
-                        font-size: 28px;
+                        font-size: 16px;
                         color: #313131;
 
                         &::placeholder {
@@ -508,10 +508,14 @@ main {
             }
         }
     }
-}
 
-@media only screen and (max-width: 767px) {
-    .hide-mob {
-        display: none;
+    .success {
+        color: #fff9e7;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .hide-mob {
+            display: none;
+        }
     }
 }
