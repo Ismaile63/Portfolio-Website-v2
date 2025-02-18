@@ -509,9 +509,7 @@ main {
         }
     }
 
-    .success {
-        color: #fff9e7;
-    }
+    @import url(./success.scss);
 
     @media only screen and (max-width: 767px) {
         .hide-mob {
