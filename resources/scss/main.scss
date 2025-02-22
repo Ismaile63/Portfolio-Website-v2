@@ -5,7 +5,7 @@
 
     font-family: 'Fira Sans', 'sans-serif';
 }
- 
+
 .line {
         position: absolute; 
         border-radius: 1em; 
@@ -449,6 +449,7 @@ main {
 
         background-position: center;
         background-size: cover;
+        overflow: hidden;
 
         &::after {
             content: '';

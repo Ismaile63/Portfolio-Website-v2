@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('html'); 
+    const header = document.querySelector('#home'); 
     const backgrounds = ['#0d103c', '#fffee7', '#191c4b', '#3e3f4e'];
     const largeNums = [60, 65, 70, 80]; 
     const smallNums = [8, 9, 10, 11];
