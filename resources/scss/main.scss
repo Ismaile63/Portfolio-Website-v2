@@ -627,6 +627,7 @@ main {
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
 
+                border: solid 1pt #fff9e7;
                 border-radius: 16px;
                 overflow: hidden;
 
@@ -637,6 +638,18 @@ main {
 
                 &:nth-child(1) {
                     background-image: url(../images/Portfolio\ Website\ v2.JPG);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+
+                &:nth-child(2) {
+                    background-image: url(../images/To-Do-List-618x800.png);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+
+                &:nth-child(5) {
+                    background-image: url(../images/Naughts\ and\ Crosses.png);
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                 }
